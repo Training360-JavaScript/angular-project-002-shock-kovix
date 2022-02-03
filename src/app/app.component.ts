@@ -18,7 +18,16 @@ export class AppComponent {
   ) {}
 
   onSelect(user: User): void {
-    console.log(user);
     this.currentUser = user;
   }
+
+  onUpdate(user: User): void {
+    this.userService.updateUser(user);
+  }
+ 
+  onDelete(user: User): void {
+    this.userService.removeUser(user);
+  }
+
+
 }

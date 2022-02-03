@@ -20,11 +20,11 @@ export class ActionButtonGroupComponent implements OnInit {
   }
 
   onUpdateButtonClick(value: boolean = true): void {
-    this.selectClick.emit(value);
+    this.updateClick.emit(value);
   }
 
   onDeleteButtonClick(value: boolean = true): void {
-    this.selectClick.emit(value);
+    this.deleteClick.emit(value);
   }
 
 }

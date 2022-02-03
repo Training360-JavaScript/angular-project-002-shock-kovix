@@ -22,10 +22,10 @@ export class DataRowComponent implements OnInit {
     this.selectClick.emit(dataRow);
   }
   onUpdateClick(dataRow: User): void {
-    this.selectClick.emit(dataRow);
+    this.updateClick.emit(dataRow);
   }
   onDeleteClick(dataRow: User): void {
-    this.selectClick.emit(dataRow);
+    this.deleteClick.emit(dataRow);
   }
 
 
