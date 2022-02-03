@@ -3,12 +3,12 @@ import { User } from 'src/app/model/user';
 
 @Component({
   selector: 'app-data-row',
-  templateUrl: './data-row-component.html',
-  styleUrls: ['./data-row-component.scss']
+  templateUrl: './data-row.component.html',
+  styleUrls: ['./data-row.component.scss']
 })
 export class DataRowComponent implements OnInit {
 
-  @Input() dataRow: User = new User();
+  @Input() dataRow: User = new User(); 
 
   @Output() selectClick: EventEmitter<User> = new EventEmitter();
   @Output() updateClick: EventEmitter<User> = new EventEmitter();
@@ -18,13 +18,13 @@ export class DataRowComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  onSelectClick(dataRow: User): void {
+  onSelectClicked(dataRow: User): void {
     this.selectClick.emit(dataRow);
   }
-  onUpdateClick(dataRow: User): void {
+  onUpdateClicked(dataRow: User): void {
     this.updateClick.emit(dataRow);
   }
-  onDeleteClick(dataRow: User): void {
+  onDeleteClicked(dataRow: User): void {
     this.deleteClick.emit(dataRow);
   }
 

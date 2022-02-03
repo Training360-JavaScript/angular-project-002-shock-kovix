@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DataRowComponent } from './data-row-component';
+import { DataRowComponent } from './data-row.component';
 
 describe('DataRowComponent', () => {
   let component: DataRowComponent;

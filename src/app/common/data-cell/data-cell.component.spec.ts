@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DataCellComponent } from './data-cell-component';
+import { DataCellComponent } from './data-cell.component';
 
 describe('DataCellComponentComponent', () => {
   let component: DataCellComponent;

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { User } from './model/user';
 import { UserService } from './service/user.service';
 
@@ -7,7 +7,7 @@ import { UserService } from './service/user.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
   title = 'The good Angular programmer';
 
   userList: User[] = this.userService.list;
@@ -16,6 +16,9 @@ export class AppComponent {
   constructor(
     private userService: UserService
   ) {}
+
+  ngOnInit() {
+  }
 
   onSelect(user: User): void {
     this.currentUser = user;

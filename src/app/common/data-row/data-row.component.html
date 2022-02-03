@@ -6,9 +6,9 @@
       <app-data-cell [data]="dataRow" [key]="'address'"></app-data-cell>
       <app-data-cell [data]="dataRow" [key]="'active'"></app-data-cell>
       <app-action-button-group 
-        (selectClick)="onSelectClick(dataRow)"
-        (updateClick)="onUpdateClick(dataRow)"
-        (deleteClick)="onDeleteClick(dataRow)"
-      ></app-action-button-group>
+        (selectClick)="onSelectClicked(dataRow)"
+        (updateClick)="onUpdateClicked(dataRow)"
+        (deleteClick)="onDeleteClicked(dataRow)"
+      ></app-action-button-group> 
     </div>
   </div>

@@ -3,8 +3,8 @@ import { User } from 'src/app/model/user';
 
 @Component({
   selector: 'app-data-cell',
-  templateUrl: './data-cell-component.html',
-  styleUrls: ['./data-cell-component.scss']
+  templateUrl: './data-cell.component.html',
+  styleUrls: ['./data-cell.component.scss']
 })
 export class DataCellComponent implements OnInit {
 
