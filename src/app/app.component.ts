@@ -10,6 +10,15 @@ import { UserService } from './service/user.service';
 export class AppComponent {
   title = 'The good Angular programmer';
 
-  constructor() {}
+  userList: User[] = this.userService.list;
+  currentUser?: User;
 
+  constructor(
+    private userService: UserService
+  ) {}
+
+  onSelect(user: User): void {
+    console.log(user);
+    this.currentUser = user;
+  }
 }
